@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="stats-container">
+      <div class="details">
+        <h1>To-Do List</h1>
+        <p id="motivate">Keep it up!</p>
+        <div id="progressBar">
+          <div id="progress"></div>
+        </div>
+      </div>
+      <div class="stats-numbers">
+        <p id="numbers">0/0</p>
+      </div>
+    </div>
+
+    <form id="taskForm">
+      <input type="text" id="taskInput" placeholder="Write your task…" autocomplete="off">
+      <select id="prioritySel">
+        <option value="low">🟢 Low</option>
+        <option value="med" selected>🟡 Med</option>
+        <option value="high">🔴 High</option>
+      </select>
+      <button id="newTask" type="submit">+</button>
+    </form>
+
+    <div class="filter-row">
+      <button class="filter-btn active" data-f="all">All</button>
+      <button class="filter-btn" data-f="active">Active</button>
+      <button class="filter-btn" data-f="done">Done</button>
+    </div>
+
+    <ul id="task-list"></ul>
+
+  </div>
+
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+</html>
