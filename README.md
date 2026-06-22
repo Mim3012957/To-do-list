@@ -35,21 +35,6 @@ todo-list/
 4. Click on a task to mark it as completed.
 5. Click the delete button to remove a task from the list.
 
-## Installation
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/your-username/todo-list.git
-```
-
-2. Navigate to the project directory:
-
-```bash
-cd todo-list
-```
-
-3. Open `index.html` in your browser.
 
 ## Future Improvements
 
